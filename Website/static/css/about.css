@@ -1,0 +1,238 @@
+/* ===================================
+   ABOUT PAGE STYLES
+   =================================== */
+
+.about-page-header {
+    position: relative;
+    z-index: 1;
+    padding: 100px 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    width: fit-content;
+    transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--border-glow);
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.about-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.about-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.about-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 560px;
+    line-height: 1.65;
+}
+
+/* ===================================
+   ABOUT CARDS
+   =================================== */
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    transition: all 0.35s ease;
+}
+
+.about-card:hover {
+    border-color: var(--border-glow);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 20px rgba(16, 185, 129, 0.08);
+    transform: translateY(-3px);
+}
+
+.about-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-card-body {
+    flex: 1;
+}
+
+.about-card-body h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.about-card-body p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* ===================================
+   TECH PILLS
+   =================================== */
+.tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.25rem;
+}
+
+.tech-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    border: 1px solid;
+}
+
+.ev-pill {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: #34d399;
+}
+
+.indigo-pill {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.sky-pill {
+    background: rgba(14, 165, 233, 0.1);
+    border-color: rgba(14, 165, 233, 0.3);
+    color: #38bdf8;
+}
+
+.amber-pill {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
+}
+
+/* ===================================
+   FEATURE LIST
+   =================================== */
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 0.25rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.feat-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* ===================================
+   ABOUT CTA
+   =================================== */
+.about-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.cta-main-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.85rem 2.25rem;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    background: linear-gradient(135deg, #10b981, #0ea5e9);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+    transition: all 0.25s ease;
+}
+
+.cta-main-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px rgba(16, 185, 129, 0.45);
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 600px) {
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+    }
+}
